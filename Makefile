@@ -7,11 +7,11 @@ test:
 
 docs: docs/api.html
 
-docs/api.html: lib/passport-google-oauth/*.js
+docs/api.html: lib/passport-aol-oauth/*.js
 	dox \
-		--title Passport-Google-OAuth \
-		--desc "Google (OAuth 1.0 and OAuth 2.0) authentication strategies for Passport" \
-		$(shell find lib/passport-google-oauth/* -type f) > $@
+		--title Passport-AOL-OAuth \
+		--desc "AOL OAuth 2.0 authentication strategies for Passport" \
+		$(shell find lib/passport-aol-oauth/* -type f) > $@
 
 docclean:
 	rm -f docs/*.{1,html}

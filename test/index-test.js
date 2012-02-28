@@ -1,23 +1,20 @@
 var vows = require('vows');
 var assert = require('assert');
 var util = require('util');
-var google = require('passport-google-oauth');
+var AOL = require('passport-aol-oauth');
 
 
-vows.describe('passport-google-oauth').addBatch({
+vows.describe('passport-aol-oauth').addBatch({
   
   'module': {
     'should report a version': function (x) {
-      assert.isString(google.version);
+      assert.isString(AOL.version);
     },
-    'should export OAuth strategy': function (x) {
-      assert.isFunction(google.Strategy);
-      assert.isFunction(google.OAuthStrategy);
-      assert.equal(google.Strategy, google.OAuthStrategy);
-    },
-    'should export OAuth 2.0 strategy': function (x) {
-      assert.isFunction(google.OAuth2Strategy);
-    },
-  },
+    'should export OAuth2 strategy': function (x) {
+      assert.isFunction(AOL.Strategy);
+      assert.isFunction(AOL.OAuth2Strategy);
+      assert.equal(AOL.Strategy, AOL.OAuth2Strategy);
+    }
+  }
   
 }).export(module);
