@@ -3,8 +3,8 @@ var express = require('express')
   , util = require('util')
   , AOLStrategy = require('passport-aol-oauth').OAuth2Strategy;
 
-var AOL_CLIENT_ID = "ao1iDZvZUadYKQfY";
-
+var AOL_CLIENT_ID = "-your-client-id-here-";
+var AOL_CLIENT_SECRET = "-your-client-secret-here-";
 
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
@@ -28,7 +28,8 @@ passport.deserializeUser(function(obj, done) {
 //   profile), and invoke a callback with a user object.
 passport.use(new AOLStrategy({
     clientID: AOL_CLIENT_ID,
-    callbackURL: "http://devstage.aol.com:3000/auth/aol/callback"
+    clientSecret: AOL_CLIENT_SECRET,
+    callbackURL: "http://127.0.0.1:3000/auth/aol/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
