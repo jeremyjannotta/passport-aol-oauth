@@ -52,7 +52,7 @@ application:
 
 ## Examples
 
-For a complete working example, refer to the [OAuth 2.0 example](https://github.com/jrodenburg/passport-aol-oauth/tree/master/examples/oauth2).
+For a complete working example, refer to the [OAuth 2.0 example](https://github.com/jeremyjannotta/passport-aol-oauth/tree/master/examples/oauth2).
 
 ## Tests
 
@@ -61,13 +61,14 @@ For a complete working example, refer to the [OAuth 2.0 example](https://github.
 
 ## Credits
 
+  - [Jeff Rodenburg](http://github.com/jrodenburg)
   - [Jared Hanson](http://github.com/jaredhanson)
 
 ## License
 
 (The MIT License)
 
-Copyright (c) 2011 Jared Hanson
+Copyright (c) 2013 Jeremy Jannotta
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

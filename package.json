@@ -1,14 +1,18 @@
 {
   "name": "passport-aol-oauth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AOL OAuth 2.0 authentication strategies for Passport.",
-  "author": { "name": "Jeff Rodenburg", "email": "jeff.rodenburg@gmail.com" },
+  "author": {
+    "name": "Jeremy Jannotta",
+    "email": "jeremy.jannotta@teamaol.com",
+    "url": "https://github.com/jeremyjannotta"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jrodenburg/passport-aol-oauth.git"
+    "url": "git://github.com/jeremyjannotta/passport-aol-oauth.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-aol-oauth/issues"
+    "url": "http://github.com/jeremyjannotta/passport-aol-oauth/issues"
   },
   "main": "./lib/passport-aol-oauth",
   "dependencies": {
